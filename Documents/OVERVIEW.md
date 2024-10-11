@@ -10,9 +10,9 @@ The **STMicroelectronics STM32F469I-DISCO Board Support Pack (BSP)**:
 
 - [Examples/Blinky](https://github.com/Open-CMSIS-Pack/STM32F469I-DISCO_BSP/tree/main/Examples/Blinky) shows the basic usage of this board.
 
-- [Board Layer](https://github.com/Open-CMSIS-Pack/STM32F469I-DISCO_BSP/tree/main/Layers/Default) for device-agnostic [Reference Applications](https://github.com/Open-CMSIS-Pack/cmsis-toolbox/blob/main/docs/ReferenceApplications.md) that provides the following connections:
+- [Board Layer](https://github.com/Open-CMSIS-Pack/STM32F469I-DISCO_BSP/tree/main/Layers/Default) for device-agnostic [Reference Applications](https://github.com/Open-CMSIS-Pack/cmsis-toolbox/blob/main/docs/ReferenceApplications.md) that implements these API interfaces:
 
-| Provided connection           | Description
+| Provided API Interface        | Description
 |:------------------------------|:------------------------------------------------------------------------------
 | CMSIS_MCI                     | CMSIS-Driver MCI connected to microSD card slot (CN9)
 | CMSIS_USB_Device              | CMSIS-Driver USB Device connected to USB_OTG_FS connector (CN13)
