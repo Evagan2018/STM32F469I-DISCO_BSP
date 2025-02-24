@@ -1,26 +1,26 @@
 # Board: STMicroelectronics [STM32F469I-DISCO](https://www.st.com/en/evaluation-tools/32f469idiscovery.html)
 
-## Default Board Layer
+# Default Board Layer
 
 Device: **STM32F469NIHx**
 
 System Core Clock: **180 MHz**
 
 This setup is configured using **STM32CubeMX**, an interactive tool provided by STMicroelectronics for device configuration.
-Refer to ["Configure STM32 Devices with CubeMX"](https://github.com/Open-CMSIS-Pack/cmsis-toolbox/blob/main/docs/CubeMX.md) for additional information.
+Refer to ["Configure STM32 Devices with CubeMX"](https://open-cmsis-pack.github.io/cmsis-toolbox/CubeMX/) for additional information.
 
-### System Configuration
+## System Configuration
 
 | System resource       | Setting
 |:----------------------|:--------------------------------------
 | Heap                  | 64 kB (configured in the STM32CubeMX)
 | Stack (MSP)           |  1 kB (configured in the STM32CubeMX)
 
-### STDIO mapping
+## STDIO mapping
 
 **STDIO** is routed to Virtual COM port on the ST-LINK (using **USART3** peripheral)
 
-### CMSIS-Driver mapping
+## CMSIS-Driver mapping
 
 | CMSIS-Driver          | Peripheral            | Board connector/component                             | Connection
 |:----------------------|:----------------------|:------------------------------------------------------|:------------------------------
@@ -33,9 +33,9 @@ Refer to ["Configure STM32 Devices with CubeMX"](https://github.com/Open-CMSIS-P
 | Driver_USBD0          | USB_OTG_FS            | User USB FS connector (CN13)                          | CMSIS_USB_Device
 | CMSIS-Driver VIO      | GPIO                  | LEDs (LD3, LD1, LD4, LD2) and Wake-up button (B1)     | CMSIS_VIO
 
-Reference to [Arduino UNO connector description](https://github.com/Open-CMSIS-Pack/cmsis-toolbox/blob/main/docs/ReferenceApplications.md#arduino-shield).
+Reference to [Arduino UNO connector description](https://open-cmsis-pack.github.io/cmsis-toolbox/ReferenceApplications/#arduino-shield).
 
-### CMSIS-Driver Virtual I/O mapping
+## CMSIS-Driver Virtual I/O mapping
 
 | CMSIS-Driver VIO      | Board component
 |:----------------------|:--------------------------------------
